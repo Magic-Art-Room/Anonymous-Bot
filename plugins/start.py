@@ -34,7 +34,7 @@ async def start(client, message):
     NewVar = START
     if var.OWNER_ID and not message.from_user.id == var.OWNER_ID:
         geto = await client.get_users(var.OWNER_ID)
-        NewVar += f"\n\nMaintained By {geto.mention}"
+        NewVar += f"\n\nMaintained By @ARKBotz"
     else:
         NewVar += "\n**Onwer Commands** - https://telegra.ph/Owner-Commands-05-13"
     await message.reply_text(
